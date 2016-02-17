@@ -1,0 +1,73 @@
+\hypertarget{wf_8c}{\section{wf.\-c File Reference}
+\label{wf_8c}\index{wf.\-c@{wf.\-c}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{wf_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, \hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char} $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{wf_8c_a43a0b947822b89570cbff955d18d0952}{my\-List} \hyperlink{wf_8c_a8f8d4fc89e696afdae9980a8e6b2f756}{add\-To\-Rear} (my\-Word)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{wf_8c_a2bed00245e126b4eff6914757499fa03}{M\-A\-X\-\_\-\-L\-I\-N\-E\-\_\-\-L\-E\-N\-G\-T\-H} = 2048
+\begin{DoxyCompactList}\small\item\em \hyperlink{wf_8c}{wf.\-c} \end{DoxyCompactList}\item 
+const \hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char} $\ast$ \hyperlink{wf_8c_a0803f9a8a479cdfddf8819f4a020cf02}{delimiters} = \char`\"{} 0123456789\textbackslash{}t;\{\}()\mbox{[}$\,$\mbox{]}.\#$<$$>$\textbackslash{}n\textbackslash{}r+-\//\%$\ast$\textbackslash{}\char`\"{}$^\wedge$$\sim$\&=!$|$\-:\textbackslash{}\textbackslash{}?,\char`\"{}
+\item 
+\hyperlink{List_8h_a861ccde58c51198da7548ab818f1bbdd}{List\-Ptr} \hyperlink{wf_8c_a43a0b947822b89570cbff955d18d0952}{my\-List}
+\item 
+static int \hyperlink{wf_8c_a26b37c8ff9218fd254c72b2cb65bee04}{mode\-Val}
+\item 
+int count\-Words \hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{wf_8c_a8f8d4fc89e696afdae9980a8e6b2f756}{\index{wf.\-c@{wf.\-c}!add\-To\-Rear@{add\-To\-Rear}}
+\index{add\-To\-Rear@{add\-To\-Rear}!wf.c@{wf.\-c}}
+\subsubsection[{add\-To\-Rear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf my\-List} add\-To\-Rear (
+\begin{DoxyParamCaption}
+\item[{my\-Word}]{}
+\end{DoxyParamCaption}
+)}}\label{wf_8c_a8f8d4fc89e696afdae9980a8e6b2f756}
+\hypertarget{wf_8c_a0ddf1224851353fc92bfbff6f499fa97}{\index{wf.\-c@{wf.\-c}!main@{main}}
+\index{main@{main}!wf.c@{wf.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{{\bf char} $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{wf_8c_a0ddf1224851353fc92bfbff6f499fa97}
+
+
+\subsection{Variable Documentation}
+\hypertarget{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{\index{wf.\-c@{wf.\-c}!char@{char}}
+\index{char@{char}!wf.c@{wf.\-c}}
+\subsubsection[{char}]{\setlength{\rightskip}{0pt plus 5cm}void add\-To\-List char}}\label{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+ 
+  
+ 
+  \textcolor{keywordtype}{int} wordCount
+\end{DoxyCode}
+\hypertarget{wf_8c_a0803f9a8a479cdfddf8819f4a020cf02}{\index{wf.\-c@{wf.\-c}!delimiters@{delimiters}}
+\index{delimiters@{delimiters}!wf.c@{wf.\-c}}
+\subsubsection[{delimiters}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf char}$\ast$ delimiters = \char`\"{} 0123456789\textbackslash{}t;\{\}()\mbox{[}$\,$\mbox{]}.\#$<$$>$\textbackslash{}n\textbackslash{}r+-\//\%$\ast$\textbackslash{}\char`\"{}$^\wedge$$\sim$\&=!$|$\-:\textbackslash{}\textbackslash{}?,\char`\"{}}}\label{wf_8c_a0803f9a8a479cdfddf8819f4a020cf02}
+\hypertarget{wf_8c_a2bed00245e126b4eff6914757499fa03}{\index{wf.\-c@{wf.\-c}!M\-A\-X\-\_\-\-L\-I\-N\-E\-\_\-\-L\-E\-N\-G\-T\-H@{M\-A\-X\-\_\-\-L\-I\-N\-E\-\_\-\-L\-E\-N\-G\-T\-H}}
+\index{M\-A\-X\-\_\-\-L\-I\-N\-E\-\_\-\-L\-E\-N\-G\-T\-H@{M\-A\-X\-\_\-\-L\-I\-N\-E\-\_\-\-L\-E\-N\-G\-T\-H}!wf.c@{wf.\-c}}
+\subsubsection[{M\-A\-X\-\_\-\-L\-I\-N\-E\-\_\-\-L\-E\-N\-G\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}const int M\-A\-X\-\_\-\-L\-I\-N\-E\-\_\-\-L\-E\-N\-G\-T\-H = 2048}}\label{wf_8c_a2bed00245e126b4eff6914757499fa03}
+
+
+\hyperlink{wf_8c}{wf.\-c} 
+
+\hypertarget{wf_8c_a26b37c8ff9218fd254c72b2cb65bee04}{\index{wf.\-c@{wf.\-c}!mode\-Val@{mode\-Val}}
+\index{mode\-Val@{mode\-Val}!wf.c@{wf.\-c}}
+\subsubsection[{mode\-Val}]{\setlength{\rightskip}{0pt plus 5cm}int mode\-Val\hspace{0.3cm}{\ttfamily [static]}}}\label{wf_8c_a26b37c8ff9218fd254c72b2cb65bee04}
+\hypertarget{wf_8c_a43a0b947822b89570cbff955d18d0952}{\index{wf.\-c@{wf.\-c}!my\-List@{my\-List}}
+\index{my\-List@{my\-List}!wf.c@{wf.\-c}}
+\subsubsection[{my\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf List\-Ptr} my\-List}}\label{wf_8c_a43a0b947822b89570cbff955d18d0952}

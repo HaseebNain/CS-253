@@ -1,0 +1,51 @@
+\hypertarget{WordObj_8c}{\section{Word\-Obj.\-c File Reference}
+\label{WordObj_8c}\index{Word\-Obj.\-c@{Word\-Obj.\-c}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Word\-Obj.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{WordObj_8h_a5d5c9e14b500907524ace24dbc92035f}{Word\-Obj\-Ptr} \hyperlink{WordObj_8c_a5621789391ee4ea45fe7a0ad5170a4a1}{create\-Word\-Obj} (const \hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char} $\ast$\hyperlink{structword}{word}, const unsigned long int freq)
+\item 
+\hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char} $\ast$ \hyperlink{WordObj_8c_a3c2b7655dfda066cd088c4f1016dd8f5}{to\-String} (const void $\ast$obj)
+\item 
+void \hyperlink{WordObj_8c_ae6a627dbeaaac7ba2db174285e66e4f2}{free\-Word\-Obj} (const void $\ast$obj)
+\item 
+int \hyperlink{WordObj_8c_a5094211caec7f2ba7d0941665d9e93f0}{compare\-To} (const void $\ast$str1, const void $\ast$str2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{WordObj_8c_a5094211caec7f2ba7d0941665d9e93f0}{\index{Word\-Obj.\-c@{Word\-Obj.\-c}!compare\-To@{compare\-To}}
+\index{compare\-To@{compare\-To}!WordObj.c@{Word\-Obj.\-c}}
+\subsubsection[{compare\-To}]{\setlength{\rightskip}{0pt plus 5cm}int compare\-To (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{str1, }
+\item[{const void $\ast$}]{str2}
+\end{DoxyParamCaption}
+)}}\label{WordObj_8c_a5094211caec7f2ba7d0941665d9e93f0}
+\hypertarget{WordObj_8c_a5621789391ee4ea45fe7a0ad5170a4a1}{\index{Word\-Obj.\-c@{Word\-Obj.\-c}!create\-Word\-Obj@{create\-Word\-Obj}}
+\index{create\-Word\-Obj@{create\-Word\-Obj}!WordObj.c@{Word\-Obj.\-c}}
+\subsubsection[{create\-Word\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Word\-Obj\-Ptr} create\-Word\-Obj (
+\begin{DoxyParamCaption}
+\item[{const {\bf char} $\ast$}]{word, }
+\item[{const unsigned long int}]{freq}
+\end{DoxyParamCaption}
+)}}\label{WordObj_8c_a5621789391ee4ea45fe7a0ad5170a4a1}
+\hypertarget{WordObj_8c_ae6a627dbeaaac7ba2db174285e66e4f2}{\index{Word\-Obj.\-c@{Word\-Obj.\-c}!free\-Word\-Obj@{free\-Word\-Obj}}
+\index{free\-Word\-Obj@{free\-Word\-Obj}!WordObj.c@{Word\-Obj.\-c}}
+\subsubsection[{free\-Word\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}void free\-Word\-Obj (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{WordObj_8c_ae6a627dbeaaac7ba2db174285e66e4f2}
+\hypertarget{WordObj_8c_a3c2b7655dfda066cd088c4f1016dd8f5}{\index{Word\-Obj.\-c@{Word\-Obj.\-c}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!WordObj.c@{Word\-Obj.\-c}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf char}$\ast$ to\-String (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{WordObj_8c_a3c2b7655dfda066cd088c4f1016dd8f5}

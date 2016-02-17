@@ -1,0 +1,307 @@
+\hypertarget{UnitTestList_8c}{\section{Unit\-Test\-List.\-c File Reference}
+\label{UnitTestList_8c}\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}common.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Word\-Obj.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Node.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}List.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{UnitTestList_8c_ad831915bc375efb1fab423abe2d0237a}{myassert}(expr)~if(!(expr))\{ fprintf(stderr, \char`\"{}\textbackslash{}t\mbox{[}assertion failed\mbox{]} \%s\-: \%s\textbackslash{}n\char`\"{}, \-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-, \-\_\-\-\_\-\-S\-T\-R\-I\-N\-G(expr)); return \hyperlink{common_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}; \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{UnitTestList_8c_ac99dadd797aac2bdc33c2cd84a79ada2}{print\-Test\-Info} (\hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char} $\ast$test\-Name, \hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char} $\ast$info)
+\item 
+void \hyperlink{UnitTestList_8c_ac96e9942e3eaf0d0531a3414d3d20608}{print\-Test\-Result} (\hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char} $\ast$test\-Name, \hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} passed)
+\item 
+\hyperlink{Node_8h_aa6eec21621b8638e350fd0ec238a9715}{Node\-Ptr} \hyperlink{UnitTestList_8c_a925d5fd5c8ee3b6c928612f99e48d425}{create\-Test\-Node} (\hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char} $\ast$jobword)
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a24938b78ba2346be1f69b2da1426cf02}{add\-At\-Front\-With\-No\-Nodes} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a705a59e4b87c8a7a4a70ca498f1744e1}{add\-At\-Front\-With\-One\-Node} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a586b3ff2c7d6ed017f75fc1aab1b9689}{add\-At\-Rear\-With\-No\-Nodes} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a1067fc89e2963b3162d269dad687df8e}{add\-At\-Rear\-With\-One\-Node} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a417de20fa051155d07b9512e22dcec14}{add\-At\-Rear\-With\-Two\-Nodes} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a29957b258664711dafbe7ccc70b94a7a}{remove\-From\-List\-With\-One\-Node} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_aebde49dfc625da690c2c7cf322ea3a4c}{add\-At\-Front\-With\-Two\-Nodes} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a77cfff07c828130971ea11e607575855}{null\-Node\-Test} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a004b5c80195593a66949d507d4745e8a}{remove\-Node\-On\-List\-With\-One\-Node} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_ae91914c9362be9e3e0c426a5c1653c9b}{get\-Size\-On\-List\-With\-One\-Node} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a0bb7c0f33ae84a900ba5f211a8da004f}{get\-Size\-On\-List\-With\-Two\-Nodes} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_afe9b455c678e56749fcf634ce67fa35a}{is\-Empty\-Test\-On\-Empty\-List} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a6029ab0964698cb6b33306aac2883446}{is\-Empty\-Test\-On\-Not\-Empty\-List} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_ac6afea595d3be5376e07a2dd8ce4796c}{remove\-Rear\-On\-List\-With\-One\-Node} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_aafd54e78c2614a7283172c7a62437de2}{remove\-Front\-On\-List\-With\-One\-Node} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_adf353de7d09dd9629acf8b9f480cce21}{remove\-Front\-On\-List\-With\-Two\-Nodes} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_afba3326a93f766284c82f71bbee2c1ab}{remove\-Rear\-On\-List\-With\-Two\-Nodes} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_af6e02af5c96adea3aeeb08f56bb3408a}{search\-Test\-On\-List\-With\-Node} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a56fca71ad46ca9a5a762a72b0a684e72}{search\-Test\-On\-List\-With\-Out\-Node} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_a2b44cbd6039ab1a034b07aa900d8ccd8}{reverse\-List\-Test\-With\-One\-Node} ()
+\item 
+\hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} \hyperlink{UnitTestList_8c_aa8f3ce8501e03594b395dde24af5bae4}{reverse\-Test\-On\-List\-With\-Two\-Nodes} ()
+\item 
+void \hyperlink{UnitTestList_8c_ae7ea328fc3ed5baa20d64b64778b84d8}{before\-Test} (\hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char} $\ast$test\-Name)
+\item 
+void \hyperlink{UnitTestList_8c_aa61bcd000621ca9664af690bc0bf76f1}{after\-Test} (\hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char} $\ast$test\-Name, \hyperlink{common_8h_a127a96e09108f503cca20256eaa4ddff}{Boolean} result)
+\item 
+void \hyperlink{UnitTestList_8c_adc55d66d01b104380f72a64f36c4cb9d}{run\-Unit\-Tests} ()
+\item 
+int \hyperlink{UnitTestList_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, \hyperlink{wf_8c_ab4771625a6a6b50b256ed1a164561cc5}{char} $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{List_8h_a861ccde58c51198da7548ab818f1bbdd}{List\-Ptr} \hyperlink{UnitTestList_8c_ac4e6f4e7b4c7e304687c40a6b4621914}{testlist}
+\item 
+int \hyperlink{UnitTestList_8c_ae8a1c912f8cc7d3e951bfbde65a08f4d}{test\-Count} = 0
+\item 
+int \hyperlink{UnitTestList_8c_a415b2b418d3a90a6e1da72992e7577aa}{pass\-Count} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{UnitTestList_8c_ad831915bc375efb1fab423abe2d0237a}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!myassert@{myassert}}
+\index{myassert@{myassert}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{myassert}]{\setlength{\rightskip}{0pt plus 5cm}\#define myassert(
+\begin{DoxyParamCaption}
+\item[{}]{expr}
+\end{DoxyParamCaption}
+)~if(!(expr))\{ fprintf(stderr, \char`\"{}\textbackslash{}t\mbox{[}assertion failed\mbox{]} \%s\-: \%s\textbackslash{}n\char`\"{}, \-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-, \-\_\-\-\_\-\-S\-T\-R\-I\-N\-G(expr)); return {\bf F\-A\-L\-S\-E}; \}}}\label{UnitTestList_8c_ad831915bc375efb1fab423abe2d0237a}
+
+
+\subsection{Function Documentation}
+\hypertarget{UnitTestList_8c_a24938b78ba2346be1f69b2da1426cf02}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!add\-At\-Front\-With\-No\-Nodes@{add\-At\-Front\-With\-No\-Nodes}}
+\index{add\-At\-Front\-With\-No\-Nodes@{add\-At\-Front\-With\-No\-Nodes}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{add\-At\-Front\-With\-No\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} add\-At\-Front\-With\-No\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a24938b78ba2346be1f69b2da1426cf02}
+\hypertarget{UnitTestList_8c_a705a59e4b87c8a7a4a70ca498f1744e1}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!add\-At\-Front\-With\-One\-Node@{add\-At\-Front\-With\-One\-Node}}
+\index{add\-At\-Front\-With\-One\-Node@{add\-At\-Front\-With\-One\-Node}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{add\-At\-Front\-With\-One\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} add\-At\-Front\-With\-One\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a705a59e4b87c8a7a4a70ca498f1744e1}
+\hypertarget{UnitTestList_8c_aebde49dfc625da690c2c7cf322ea3a4c}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!add\-At\-Front\-With\-Two\-Nodes@{add\-At\-Front\-With\-Two\-Nodes}}
+\index{add\-At\-Front\-With\-Two\-Nodes@{add\-At\-Front\-With\-Two\-Nodes}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{add\-At\-Front\-With\-Two\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} add\-At\-Front\-With\-Two\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_aebde49dfc625da690c2c7cf322ea3a4c}
+\hypertarget{UnitTestList_8c_a586b3ff2c7d6ed017f75fc1aab1b9689}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!add\-At\-Rear\-With\-No\-Nodes@{add\-At\-Rear\-With\-No\-Nodes}}
+\index{add\-At\-Rear\-With\-No\-Nodes@{add\-At\-Rear\-With\-No\-Nodes}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{add\-At\-Rear\-With\-No\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} add\-At\-Rear\-With\-No\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a586b3ff2c7d6ed017f75fc1aab1b9689}
+\hypertarget{UnitTestList_8c_a1067fc89e2963b3162d269dad687df8e}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!add\-At\-Rear\-With\-One\-Node@{add\-At\-Rear\-With\-One\-Node}}
+\index{add\-At\-Rear\-With\-One\-Node@{add\-At\-Rear\-With\-One\-Node}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{add\-At\-Rear\-With\-One\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} add\-At\-Rear\-With\-One\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a1067fc89e2963b3162d269dad687df8e}
+\hypertarget{UnitTestList_8c_a417de20fa051155d07b9512e22dcec14}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!add\-At\-Rear\-With\-Two\-Nodes@{add\-At\-Rear\-With\-Two\-Nodes}}
+\index{add\-At\-Rear\-With\-Two\-Nodes@{add\-At\-Rear\-With\-Two\-Nodes}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{add\-At\-Rear\-With\-Two\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} add\-At\-Rear\-With\-Two\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a417de20fa051155d07b9512e22dcec14}
+\hypertarget{UnitTestList_8c_aa61bcd000621ca9664af690bc0bf76f1}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!after\-Test@{after\-Test}}
+\index{after\-Test@{after\-Test}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{after\-Test}]{\setlength{\rightskip}{0pt plus 5cm}void after\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf char} $\ast$}]{test\-Name, }
+\item[{{\bf Boolean}}]{result}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_aa61bcd000621ca9664af690bc0bf76f1}
+\hypertarget{UnitTestList_8c_ae7ea328fc3ed5baa20d64b64778b84d8}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!before\-Test@{before\-Test}}
+\index{before\-Test@{before\-Test}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{before\-Test}]{\setlength{\rightskip}{0pt plus 5cm}void before\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf char} $\ast$}]{test\-Name}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_ae7ea328fc3ed5baa20d64b64778b84d8}
+\hypertarget{UnitTestList_8c_a925d5fd5c8ee3b6c928612f99e48d425}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!create\-Test\-Node@{create\-Test\-Node}}
+\index{create\-Test\-Node@{create\-Test\-Node}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{create\-Test\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\-Ptr} create\-Test\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf char} $\ast$}]{jobword}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a925d5fd5c8ee3b6c928612f99e48d425}
+\hypertarget{UnitTestList_8c_ae91914c9362be9e3e0c426a5c1653c9b}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!get\-Size\-On\-List\-With\-One\-Node@{get\-Size\-On\-List\-With\-One\-Node}}
+\index{get\-Size\-On\-List\-With\-One\-Node@{get\-Size\-On\-List\-With\-One\-Node}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{get\-Size\-On\-List\-With\-One\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} get\-Size\-On\-List\-With\-One\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_ae91914c9362be9e3e0c426a5c1653c9b}
+\hypertarget{UnitTestList_8c_a0bb7c0f33ae84a900ba5f211a8da004f}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!get\-Size\-On\-List\-With\-Two\-Nodes@{get\-Size\-On\-List\-With\-Two\-Nodes}}
+\index{get\-Size\-On\-List\-With\-Two\-Nodes@{get\-Size\-On\-List\-With\-Two\-Nodes}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{get\-Size\-On\-List\-With\-Two\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} get\-Size\-On\-List\-With\-Two\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a0bb7c0f33ae84a900ba5f211a8da004f}
+\hypertarget{UnitTestList_8c_afe9b455c678e56749fcf634ce67fa35a}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!is\-Empty\-Test\-On\-Empty\-List@{is\-Empty\-Test\-On\-Empty\-List}}
+\index{is\-Empty\-Test\-On\-Empty\-List@{is\-Empty\-Test\-On\-Empty\-List}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{is\-Empty\-Test\-On\-Empty\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} is\-Empty\-Test\-On\-Empty\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_afe9b455c678e56749fcf634ce67fa35a}
+\hypertarget{UnitTestList_8c_a6029ab0964698cb6b33306aac2883446}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!is\-Empty\-Test\-On\-Not\-Empty\-List@{is\-Empty\-Test\-On\-Not\-Empty\-List}}
+\index{is\-Empty\-Test\-On\-Not\-Empty\-List@{is\-Empty\-Test\-On\-Not\-Empty\-List}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{is\-Empty\-Test\-On\-Not\-Empty\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} is\-Empty\-Test\-On\-Not\-Empty\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a6029ab0964698cb6b33306aac2883446}
+\hypertarget{UnitTestList_8c_a0ddf1224851353fc92bfbff6f499fa97}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!main@{main}}
+\index{main@{main}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{{\bf char} $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a0ddf1224851353fc92bfbff6f499fa97}
+\hypertarget{UnitTestList_8c_a77cfff07c828130971ea11e607575855}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!null\-Node\-Test@{null\-Node\-Test}}
+\index{null\-Node\-Test@{null\-Node\-Test}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{null\-Node\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} null\-Node\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a77cfff07c828130971ea11e607575855}
+\hypertarget{UnitTestList_8c_ac99dadd797aac2bdc33c2cd84a79ada2}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!print\-Test\-Info@{print\-Test\-Info}}
+\index{print\-Test\-Info@{print\-Test\-Info}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{print\-Test\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void print\-Test\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf char} $\ast$}]{test\-Name, }
+\item[{{\bf char} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_ac99dadd797aac2bdc33c2cd84a79ada2}
+\hypertarget{UnitTestList_8c_ac96e9942e3eaf0d0531a3414d3d20608}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!print\-Test\-Result@{print\-Test\-Result}}
+\index{print\-Test\-Result@{print\-Test\-Result}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{print\-Test\-Result}]{\setlength{\rightskip}{0pt plus 5cm}void print\-Test\-Result (
+\begin{DoxyParamCaption}
+\item[{{\bf char} $\ast$}]{test\-Name, }
+\item[{{\bf Boolean}}]{passed}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_ac96e9942e3eaf0d0531a3414d3d20608}
+\hypertarget{UnitTestList_8c_a29957b258664711dafbe7ccc70b94a7a}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!remove\-From\-List\-With\-One\-Node@{remove\-From\-List\-With\-One\-Node}}
+\index{remove\-From\-List\-With\-One\-Node@{remove\-From\-List\-With\-One\-Node}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{remove\-From\-List\-With\-One\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} remove\-From\-List\-With\-One\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a29957b258664711dafbe7ccc70b94a7a}
+\hypertarget{UnitTestList_8c_aafd54e78c2614a7283172c7a62437de2}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!remove\-Front\-On\-List\-With\-One\-Node@{remove\-Front\-On\-List\-With\-One\-Node}}
+\index{remove\-Front\-On\-List\-With\-One\-Node@{remove\-Front\-On\-List\-With\-One\-Node}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{remove\-Front\-On\-List\-With\-One\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} remove\-Front\-On\-List\-With\-One\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_aafd54e78c2614a7283172c7a62437de2}
+\hypertarget{UnitTestList_8c_adf353de7d09dd9629acf8b9f480cce21}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!remove\-Front\-On\-List\-With\-Two\-Nodes@{remove\-Front\-On\-List\-With\-Two\-Nodes}}
+\index{remove\-Front\-On\-List\-With\-Two\-Nodes@{remove\-Front\-On\-List\-With\-Two\-Nodes}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{remove\-Front\-On\-List\-With\-Two\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} remove\-Front\-On\-List\-With\-Two\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_adf353de7d09dd9629acf8b9f480cce21}
+\hypertarget{UnitTestList_8c_a004b5c80195593a66949d507d4745e8a}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!remove\-Node\-On\-List\-With\-One\-Node@{remove\-Node\-On\-List\-With\-One\-Node}}
+\index{remove\-Node\-On\-List\-With\-One\-Node@{remove\-Node\-On\-List\-With\-One\-Node}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{remove\-Node\-On\-List\-With\-One\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} remove\-Node\-On\-List\-With\-One\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a004b5c80195593a66949d507d4745e8a}
+\hypertarget{UnitTestList_8c_ac6afea595d3be5376e07a2dd8ce4796c}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!remove\-Rear\-On\-List\-With\-One\-Node@{remove\-Rear\-On\-List\-With\-One\-Node}}
+\index{remove\-Rear\-On\-List\-With\-One\-Node@{remove\-Rear\-On\-List\-With\-One\-Node}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{remove\-Rear\-On\-List\-With\-One\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} remove\-Rear\-On\-List\-With\-One\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_ac6afea595d3be5376e07a2dd8ce4796c}
+\hypertarget{UnitTestList_8c_afba3326a93f766284c82f71bbee2c1ab}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!remove\-Rear\-On\-List\-With\-Two\-Nodes@{remove\-Rear\-On\-List\-With\-Two\-Nodes}}
+\index{remove\-Rear\-On\-List\-With\-Two\-Nodes@{remove\-Rear\-On\-List\-With\-Two\-Nodes}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{remove\-Rear\-On\-List\-With\-Two\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} remove\-Rear\-On\-List\-With\-Two\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_afba3326a93f766284c82f71bbee2c1ab}
+\hypertarget{UnitTestList_8c_a2b44cbd6039ab1a034b07aa900d8ccd8}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!reverse\-List\-Test\-With\-One\-Node@{reverse\-List\-Test\-With\-One\-Node}}
+\index{reverse\-List\-Test\-With\-One\-Node@{reverse\-List\-Test\-With\-One\-Node}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{reverse\-List\-Test\-With\-One\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} reverse\-List\-Test\-With\-One\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a2b44cbd6039ab1a034b07aa900d8ccd8}
+\hypertarget{UnitTestList_8c_aa8f3ce8501e03594b395dde24af5bae4}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!reverse\-Test\-On\-List\-With\-Two\-Nodes@{reverse\-Test\-On\-List\-With\-Two\-Nodes}}
+\index{reverse\-Test\-On\-List\-With\-Two\-Nodes@{reverse\-Test\-On\-List\-With\-Two\-Nodes}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{reverse\-Test\-On\-List\-With\-Two\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} reverse\-Test\-On\-List\-With\-Two\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_aa8f3ce8501e03594b395dde24af5bae4}
+\hypertarget{UnitTestList_8c_adc55d66d01b104380f72a64f36c4cb9d}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!run\-Unit\-Tests@{run\-Unit\-Tests}}
+\index{run\-Unit\-Tests@{run\-Unit\-Tests}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{run\-Unit\-Tests}]{\setlength{\rightskip}{0pt plus 5cm}void run\-Unit\-Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_adc55d66d01b104380f72a64f36c4cb9d}
+\hypertarget{UnitTestList_8c_af6e02af5c96adea3aeeb08f56bb3408a}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!search\-Test\-On\-List\-With\-Node@{search\-Test\-On\-List\-With\-Node}}
+\index{search\-Test\-On\-List\-With\-Node@{search\-Test\-On\-List\-With\-Node}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{search\-Test\-On\-List\-With\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} search\-Test\-On\-List\-With\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_af6e02af5c96adea3aeeb08f56bb3408a}
+\hypertarget{UnitTestList_8c_a56fca71ad46ca9a5a762a72b0a684e72}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!search\-Test\-On\-List\-With\-Out\-Node@{search\-Test\-On\-List\-With\-Out\-Node}}
+\index{search\-Test\-On\-List\-With\-Out\-Node@{search\-Test\-On\-List\-With\-Out\-Node}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{search\-Test\-On\-List\-With\-Out\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boolean} search\-Test\-On\-List\-With\-Out\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{UnitTestList_8c_a56fca71ad46ca9a5a762a72b0a684e72}
+
+
+\subsection{Variable Documentation}
+\hypertarget{UnitTestList_8c_a415b2b418d3a90a6e1da72992e7577aa}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!pass\-Count@{pass\-Count}}
+\index{pass\-Count@{pass\-Count}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{pass\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int pass\-Count = 0}}\label{UnitTestList_8c_a415b2b418d3a90a6e1da72992e7577aa}
+\hypertarget{UnitTestList_8c_ae8a1c912f8cc7d3e951bfbde65a08f4d}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!test\-Count@{test\-Count}}
+\index{test\-Count@{test\-Count}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{test\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int test\-Count = 0}}\label{UnitTestList_8c_ae8a1c912f8cc7d3e951bfbde65a08f4d}
+\hypertarget{UnitTestList_8c_ac4e6f4e7b4c7e304687c40a6b4621914}{\index{Unit\-Test\-List.\-c@{Unit\-Test\-List.\-c}!testlist@{testlist}}
+\index{testlist@{testlist}!UnitTestList.c@{Unit\-Test\-List.\-c}}
+\subsubsection[{testlist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf List\-Ptr} testlist}}\label{UnitTestList_8c_ac4e6f4e7b4c7e304687c40a6b4621914}

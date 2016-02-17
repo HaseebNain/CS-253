@@ -1,0 +1,80 @@
+ 
+****************
+* p3
+* CS 253
+* 7/13/2014
+* Haseeb Nain
+**************** 
+
+OVERVIEW:
+
+ This program will take be used to create a generic variation of the DoubleLinkedList using C programming. The main class of this program is List.c
+ The other classes in this project are used for testing the list.
+ 
+ 
+INCLUDED FILES:
+
+ Included files are:
+ 
+ List.c - this is the main file, this file will create the DoubleLinkedList which will be used to hold data
+ List.h - This is the header file for List.c
+ common.h - This is the common header file for the program, and is used throughout the testing programs
+ doxygen-config - This file is used for configuration of dOxygen.
+ Object.c - This file is used for create the objects encompassed by the nodes.
+ Object.h - This is the heaeder file for Object.c
+ RandomTestList.c - This program will create random scenarios to test the list with, as a simulation of user activity.
+ SimpleTestList.c - This program will simply test the ability for the list to print and reverse itself.
+ UnitTestList.c - This program provides various unit tests to test the capability of the DoubleLinkedList
+ README - this file
+ Library - A directory which includes the doublylinkedlist's conversion to a generic library program.
+ MakeFile - this file will create the executable of endian.c
+ 
+ 
+BUILDING AND RUNNING:
+
+ This program has been tested on the command line, in order to run the program you will need to make the executable of any of the test files, this is done through the
+ "make" command.
+ For both the RandomTestList and SimpleTestList you will need to specify a size of the list, this is done with the second argument in the command-line.
+ For UnitTestList you must simply run the executable.
+
+ 
+---------------SVN INFO---------------
+[hnain@onyx p3]$ svn info
+Path: .
+Working Copy Root Path: /home/students/hnain/repos/hnain
+URL: https://onyx.boisestate.edu/repos/students/hnain/cs253/p3
+Repository Root: https://onyx.boisestate.edu/repos/students
+Repository UUID: 923f9d24-d74f-4527-9964-f171a77c7013
+Revision: 5059
+Node Kind: directory
+Schedule: normal
+Last Changed Author: hnain
+Last Changed Rev: 5032
+Last Changed Date: 2014-07-13 20:54:54 -0600 (Sun, 13 Jul 2014)
+
+
+
+
+
+PROGRAM DESIGN:
+
+ This program was based on how I created my DoubleLinkedList in CS221. With this prior knowledge I was able to create the add methods relatively quickly. The same problems remained from my original DoubleLinkedList for p2, this made conversion to generic difficult. With a lot of time put in at the tutoring center, I was able to allieve a majority of the problems. All methods now work accordingly.
+ 
+
+TESTING:
+
+ This program was tested through the use of test programs. This program was also originally tested with Shane's debug program as well. Valgrind continued to be a pain for this assignment, however I felt better about valgrind this time around.
+
+
+DISCUSSION:
+ 
+ SVN was used thoroughly, like dropbox. However after I installed MobaXterm on my home computer, I was able to directly manipulate the classes. And use the commands I am used to with the windows OS. I attempted to work on the new Makefile, and at first everything compiled and ran as expected. However after tinkering with my List.c file the new makeFile no longer compiled. I have copy and pasted the Makefile below, everything worked at one point. I'm not sure why or how it stopped working, but because it did I ended up using the original makefile from p2. Also one thing I learned about makefiles, and making them on windows...tabs are very important. I kept getting a "seperation needed" and for the life of me wasn't sure why. Stackoverflow showed that when using MobaXterm a tab is counted at eight spaces, at least on my machine, so in order to fix it I had to google "linux tab" and then copy and paste that specific tab where I need to tab. That was a fun experience...
+  FINALLY!!!!!!!!!!!!!!!!!! After ALOT of time spent in the labs and at home I found out my problem was with the debugger provided for p2. When using "make clean" in the debugger directory the entire debugger would get removed. So this lead me to beleive that the
+  debugger was not to be "make cleaned" so I didn't "make" it to update. My code was always working, freelist/remove all worked. There was a tiny problem with the reverse method, in that I was assigning a new head, not a new tail.
+  With this problem solved my code passes everything! I am giddy like a school girl.
+ 
+EXTRA CREDIT:
+
+  In order to get the library function working, I ended up have to make another copy of Object.c and Object.h in my libsrc directory. And with that I was able to create the library files!
+ 
+ 
